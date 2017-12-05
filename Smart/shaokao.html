@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<title>Document</title>
+  <link rel="stylesheet" href="dist/css/swiper.min.css">
+<style>
+
+body {
+        background: #eee;
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        color:#000;
+        margin: 0;
+        padding: 0;
+        max-width:640px；
+        min-width: 320px;
+    }
+       .to{
+         text-align: center;
+         margin:0;
+         padding:0;
+         font-size: 0;
+         position: relative;
+       }
+       .to .im{
+        
+        left:0;
+       	height: 190px;
+       	width: 370px;
+       }
+       .to .pn{
+       	position: absolute;
+       	left:10px;
+       	top:10px;
+       	width:5%;
+       }
+       .bor{
+       	padding:0;
+       	margin:0 auto;
+       	margin-top: 0;
+       	display: block;
+       	width: 1px;
+       	height: 70px;
+       	background-color: #C4C4C4;
+       }
+       .con{
+       	text-align: center;
+       }
+       .con h3{
+       	padding-bottom:0;
+       	margin-bottom:0;
+       }
+       .con p{
+       	padding:0;
+       	margin:0;
+       	color: #616161;
+       }
+       .con #len{
+        text-align: center;
+        margin-top: 10px;
+        font-size: 12px;
+       }
+       li{
+        list-style-type: none;
+        font-size: 10px;
+        color: #616161;
+       }
+       .lea{
+        padding-top:10px;
+        padding-bottom: 20px;
+        border-bottom: 1px solid #828282;
+       }
+       .lea ul{
+        display: flex;
+        padding-left: 0px;
+        margin-left: 0px;
+       }
+
+       .lea ul li{
+        width: 70px;
+        height: 20px;
+        background-color: #B8B8B8;
+        color: #ffffff;
+        font-size: 12px;
+        margin-left: 40px;
+        text-align: center;
+        line-height: 20px;
+
+       }
+       .lea li a{
+        text-decoration: none;
+        color: #fff;
+       }
+       .lea #first{
+        
+        background-color: #828282;
+        color: #ffffff;
+}
+html, body {
+      position: relative;
+      height: 100%;
+    }
+.swiper-container {
+      margin-top:10px;
+      width: 300px;
+      height: 200px;
+    }
+    .swiper-slide img{
+      width:300px;
+      height: 200px;
+    }
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background:#fff;
+
+      /* Center slide text vertically */
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+    }
+    .dh{
+      margin-top:30px;
+    }
+    .dh span{
+      margin-left: 35px;
+
+    }
+    .dh ul li{
+      line-height: 15px;
+    }
+    .dh p{
+      margin-top: 30px;
+      text-align: center;
+      margin-left: 35px;
+      width: 300px;
+      height: 25px;
+      color: #fff;
+      background-color: #828282;
+    }
+      .la{
+      margin-top: 60px;
+      }
+      .la ul{
+        display: flex;
+        width: 25px;
+      }
+      .la ul img{
+        width: 80px;
+        height: 80px;
+      }  
+      .la .btt{
+        color: #0000AA;
+        width: 300px;
+        height: 30px;
+        line-height: 30px;
+        margin-left: 35px;
+        border-top: 1px solid #828282;
+        border-bottom: 1px solid #828282;
+      }
+       .la ul li {
+    margin-right: 25px;
+}
+      .la p{
+        font-size: 10px;
+        width:290px;
+        text-align: left;
+        margin-left: 39px;
+        line-height: 16px;
+      }
+</style>
+</head>
+<body>
+<header class="to">
+<img class="im" src="img/timg.jpg">
+<a href="index.html"><img class="pn" src="img/fan.png"></a>
+</header>
+<bor class="bor"></bor>
+<content class="con">
+   <h3>DINING</h3>
+   <p>住宿食堂</p>
+   <p id="len"><li>我们的食堂环境清新优雅，食材以农场自己的动、</li>
+<li>植物为原材料，提供多种饮食种类，最大化让您体验优质服务。</li>
+</p>
+ </content>
+
+<div class="lea">
+<ul>
+<li><a href="zhusushitang.html">三食三餐</a></li>
+<li id="first"><a href="">小烧烤</a></li>
+<li><a href="zuofan.html">自助做饭</a></li>
+</ul>
+</div>
+
+
+<div class="dh">
+<span>烧烤原材料</span>
+ <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><img src="img/fdg.jpg"></div>
+      <div class="swiper-slide"><img src="img/sds.jpg"></div>
+      <div class="swiper-slide"><img src="img/zzz.jpg"></div>
+      <div class="swiper-slide"><img src="img/dgf.jpg"></div>
+      <div class="swiper-slide"><img src="img/njh.jpg"></div>
+    </div>
+    <!-- Add Pagination -->
+    <div class="swiper-pagination"></div>
+  </div>
+<ul>
+<li>我们的猪牛羊等家畜都是健康、绿色的散养长大，肉质鲜美</li>
+<li>，吃过之后唇齿留香，蔬菜如豆角、辣椒、韭菜、菌类等都</li>
+<li>由农场自主种植。我们专门请专业人员为我们制定专业的养殖</li>
+<li>方案</li>
+</ul>
+
+<p>小烧烤</p>
+</div>
+
+<div class="la">
+<p class="btt">肉类</p>
+<ul>
+<li><img src="img/2571.jpg"></li>
+<li><img src="img/644a429d2ec27c16ef1a5eeb41284a66@700w_700h_1e_1l-watermark=1&&r=1&p=9&x=2&y=2&relative=1&o=20.jpg"></li>
+<li><img src="img/dfds.jpg"></li>
+
+</ul>  
+<ul>
+<li><img src="img/t01bcaca9b8d9422672.jpg"></li>
+<li><img src="img/e11fcd720d7c6ec8dbf447974def6163@700w_700h_1e_1l-watermark=1&&r=1&p=9&x=2&y=2&relative=1&o=20.jpg"></li>
+<li><img src="img/330696-140H31A92515.jpg"></li>
+</ul>  
+<p>
+将猪脆骨与胸口肉交隔相串成的骨肉相连，加调料烤制后口感一流，鸡翅膀可分为翅中和翅尖，分开烤制滋味各有妙处，除此之外还有羊肉串、牛板筋等等许多类型烤串，流连忘返，口齿留香。
+
+</p>
+
+</div>
+
+<div class="la">
+<p class="btt">蔬菜</p>
+<ul>
+<li><img src="img/330357-15102P1591422.jpg"></li>
+<li><img src="img/20140818101438131.jpg"></li>
+<li><img src="img/dfds.jpg"></li>
+
+</ul>  
+<ul>
+<li><img src="img/20121017092752_WJevS.thumb.700_0 (1).png"></li>
+<li><img src="img/tooopen_sy_164455992282.jpg"></li>
+<li><img src="img/e07f97268e9ccec9c77fecedee40a191.jpg"></li>
+</ul>  
+<p>
+将新鲜采摘的韭菜、茄子、豇豆、辣椒、豆角等蔬菜放置在炭火之上，待烤熟之后刷上调料，传统蔬菜与新鲜的烧烤方式相结合，是更上一层楼的美味体验
+
+</p>
+
+</div>
+
+<div class="la">
+<p class="btt">Suprise！</p>
+<img src="img/8c201295f8ca0f5a6ab08ac36a5c813a505106.jpg" style="width: 300px;margin-left: 35px;">
+<p>
+农场自主养殖的绵羊，体重约15kg，口感鲜嫩。
+烤全羊由我们工作人员亲自烧烤，其他种类我们准备生串提供烧烤工具，您和您的亲朋一起烧烤，生串的价格和工具均在与住宿费一起产生。
+</p>
+
+</div>
+
+
+<script src="dist/js/swiper.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper('.swiper-container', {
+      pagination: {
+        el: '.swiper-pagination',
+      },
+    });
+  </script>
+
+</body>
+</html>

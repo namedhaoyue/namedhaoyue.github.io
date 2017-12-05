@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		*{padding: 0;margin: 0;font-family: 微软雅黑;}
+		a img{border: none;}
+		a{text-decoration: none;color: #fff;}
+		.jlist h2{text-align:center;background-color: skyblue;}
+		.jlist li{width:45vw;position: relative;float: left;margin-left: 2vw; list-style: none;margin-bottom: 20px;}
+		.jlist p{position: absolute; width: 100%; height: 32px;line-height: 32px;text-align:center;background: skyblue;left:0;bottom: 0;
+		}
+		.jlist img{width: 100%;}
+		.jlist li a{color: #fff;position: relative;}
+	</style>
+	<link rel="stylesheet" href="iconfont.css">
+	<script src="js/jquery-1.9.1.js"></script>
+	<script>
+	$(function(){
+		function loadajax(jfile){
+			$.ajax({type:'post',
+        url:jfile,
+        data:{},
+        dataType:'json',
+        success:function(data){
+        	console.log(data);
+        	$.each(data,function(i,item){
+        		var r=item.content;
+        		var k=item.pic;
+        		var l=item.link;
+
+				addRow(r,k,l);     		
+        	})
+        	
+        }
+ })
+		}
+
+	
+		
+		function addRow(r,k,l){
+			var row="<li><a href='"+l+"'>"+
+					"<img src='"+k+"'></a>"+
+					"<p><a href='"+l+"'>"+r+"</a></p><>";
+				$(".jlist>ul").append(row);
+
+		}
+loadajax("json1.json");
+var N=3,xh=1;
+
+		$("#more").click(function(){
+			xh++;
+			var filename="json"+ xh+".json";
+			if(xh<=N)loadajax(filename);
+			else $("#more").text("没有更多了"); 
+		})
+	});
+	
+
+	</script>
+</head>
+<body>	
+
+	
+	<section class="jlist">
+		<h2>dog</h2>
+		<ul>
+		
+
+
+		</ul>
+		<p id="more">加载更多</p>
+
+	</section>
+	
+</body>
+</html>

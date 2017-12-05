@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<title>Document</title>
+  <link href="css/select.css" rel="stylesheet" />
+<link href="css/jquery.mCustomScrollbar.min.css" rel="stylesheet" />
+<style>
+body {
+       
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        color:#000;
+        margin: 0;
+        padding: 0;
+        max-width:640px；
+        min-width: 320px;
+    }
+   
+       .to{
+         text-align: center;
+         margin:0;
+         padding:0;
+         font-size: 0;
+         position: relative;
+       }
+       .to .im{
+        
+        left:0;
+       	height: 190px;
+       	width: 370px;
+       }
+       .to .pn{
+       	position: absolute;
+       	left:10px;
+       	top:10px;
+       	width:5%;
+       }
+       .bor{
+       	padding:0;
+       	margin:0 auto;
+       	margin-top: 0;
+       	display: block;
+       	width: 1px;
+       	height: 70px;
+       	background-color: #C4C4C4;
+       }
+       .con{
+       	text-align: center;
+        padding-bottom: 20px;
+        display: block;
+        border-bottom: 1px solid #515151;
+       }
+       .con h3{
+       	padding-bottom:0;
+       	margin-bottom:0;
+       }
+       .con p{
+       	padding:0;
+       	margin:0;
+       	color: #616161;
+       }
+       ul li{
+        list-style: none;
+       }
+       .con ul{
+        margin-top:20px;
+        font-size: 12px;
+        text-align: left;
+        color: #515151;
+       }
+       .con ul li{
+        line-height: 25px;
+       }
+       .con ul li:last-child
+       {
+        color: #0000FF;
+       }
+       .mid{
+        padding-bottom: 60px;
+        
+       }
+       .mid .hz{
+        width: 260px;
+        height: 25px;
+        border:1px solid #515151;
+
+       }
+       .mid .dhz{
+        width: 260px;
+        height: 125px;
+        border:1px solid #515151;
+       }
+       .mid li{
+        line-height: 50px;
+        font-size: 13px;
+       }
+       .mid #las{
+        padding-top: 0px;
+       }
+       .mid button{
+        width:100px;
+       position: absolute;
+       right: 73px;
+       }
+       .bot{
+        display: flex;
+        font-size: 10px;
+        background-color: #1E1E1E;
+       }
+       .bot img{
+        width: 25%;
+        height: 25%;
+        margin-top: 20px;
+        margin-left: 20px;
+       }
+       .bot ul{
+        
+        padding-left:20px;
+       }
+       .bot ul li{
+        line-height: 30px;
+        color: #ffffff;
+       }
+       .bot ul li span{
+        color: #0000CD;
+       }
+</style>
+</head>
+<body>
+<header class="to">
+<img class="im" src="img/timg.jpg">
+<a href="index.html"><img class="pn" src="img/fan.png"></a>
+</header>
+<bor class="bor"></bor>
+<content class="con">
+   <h3>CONTACT US</h3>
+   <p>联系我们</p>
+   <ul>
+   <li>欢迎您通过这个页面表单咨询住宿、订房问题，也欢迎</li>
+   <li>您写下相关的住宿心得和建议。</li>
+   <li>您的鼓励和建议是我们成长的动力，所有的问题</li>
+   <li>我们都会尽快给您答复。</li>
+   <li>祝您拥有美好的一天！</li>
+   </ul>
+ </content>
+
+  <div class="mid">
+   <ul>
+   <li>姓名  <label><input type="radio" name="sex" value="">先生</label> 
+            <label><input type="radio" name="sex" value="">女士</label>
+    </li>
+   <li><div class="hz"></div></li>
+   </ul>
+
+   <ul>
+   <li>联系电话
+    </li>
+   <li><div class="hz"></div></li>
+   </ul>
+
+   <ul>
+   <li>电子邮箱
+    </li>
+   <li><div class="hz"></div></li>
+   </ul>
+
+   <ul>
+   <li>问题类型
+    </li>
+   <div class="vertical">
+<select id="mySelect">
+  <option value="1" selected="selected">订房咨询</option>
+  <option value="2">住宿建议回馈</option>
+  <option value="3">其他</option>
+
+</select>
+</div>
+   </ul>
+
+  <ul id="las">
+   <li>需求说明
+    </li>
+   <li><div class="dhz"></div></li>
+   </ul>
+   <button>发送</button>
+  </div>
+ 
+ <div class="bot">
+<img src="img/1.gif">
+<ul>
+<li><span>地址</span>：  辽宁省大连市东软信息学院东门</li>
+<li><span>订房热线</span>：400 820 88</li>
+<li><span>客服邮箱</span>：zhihuinongchangzhusu@qq.com</li>
+<li><span>社交平台ID</span>:</li>
+<li><span>QQ</span>：17210121</li>
+<li><span>WeChat</span>：17210121</li>
+<li><span>微博</span>：智慧农场住宿.gif</li>
+</ul>
+
+ </div>
+
+
+
+<script src="js/jquery-1.11.3.min.js"></script>
+<script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="js/jquery.select.js"></script>
+
+<script type="text/javascript">
+  $(function () {
+
+    
+    $("#mySelect").select({
+      width: "260px"
+    });
+    //可选参数,不填就是默认值
+    //width: "180px",            //生成的select框宽度
+    //listMaxHeight:"200px",     //生成的下拉列表最大高度
+    //themeColor: "#00bb9c",    //主题颜色
+    //fontColor: "#000",        //字体颜色
+    //fontFamily: "'Helvetica Neue', arial, sans-serif",    //字体种类
+    //fontSize:"15px",           //字体大小
+    //showSearch: false,        //是否启用搜索框
+    //rowColor:"#fff",          //行原本的颜色
+    //rowHoverColor: "#0faf03", //移动选择时，每一行的hover底色
+    //fontHoverColor: "#fff",   //移动选择时，每一行的字体hover颜色
+    //mainContent: "请选择",    //选择显示框的默认文字
+    //searchContent: "关键词搜索"   //搜索框的默认提示文字  
+  });
+</script>
+</body>
+</html>

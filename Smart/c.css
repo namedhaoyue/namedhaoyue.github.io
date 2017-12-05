@@ -1,0 +1,10 @@
+body,h1,h2,h3,h4,h5,h6,ul,p,dl,dd,dt,form,footer{padding:0; margin: 0;}
+ul{list-type:none;}
+a{text-decoration: none; color: #000;}
+body{font-size: 14px;}
+a img{border:none;}
+.clear{clear:both;}
+.clearfix{zoom:1;}
+.clearfix:after{content:"";height:0;font-size:0;
+clear:both;visibility:hidden;overflow:hidden;}
+#mb{min-width：320px;max-width:640px;margin:0 auto;}

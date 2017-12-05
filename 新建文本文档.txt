@@ -1,0 +1,46 @@
+掌握Dreamever、sublime、photoshop、axure等软件的用法；
+掌握html5、css3以及js的使用方法；
+掌握json格式、bootstrap、swiper、ajax的应用；
+了解JAVA的基本用法；
+掌握ppt、word、excel等办公软件的使用；
+在校期间参与“智慧农场”项目并成功立项；
+英语水平良好，能听能写能完成基本工作。
+
+2017年8月至今 在罗森便利店兼职；
+2016年12月在咖啡厅兼职；
+2016年5月在麦当劳兼职。
+
+在班级担任学习委员；
+在学生会学习部任部员，曾参与组织过学校举办的C++编程大赛并获得圆满成功；
+在2015至2016学年担任领读员；
+在2015学年参加学校举办的手语操比赛获得优秀奖；
+参加过创业蛙、三创比赛
+
+与人相处真诚有礼，有团队精神，乐于与人沟通；
+有问题积极查找以寻求解决办法；
+善于总结、反思自己以不断提升自身综合能力；
+曾在校参与“智慧农场”项目，负责其中住宿模块，运用axure画出草图，通过html、css和js代码以及json格式、swiper插件实现页面。
+
+
+.content{
+	display: flex;
+	width:900px;
+	margin:0 auto;
+}
+.content .box{
+	display: flex;
+	float: left;
+	width: 300px
+	height:300px;
+	background-color: red;
+}
+.content .bigbox{
+	display: flex;
+	float: left;
+	width: 300px
+	height:300px;
+	background-color: skyblue;
+	margin-left: 20px;
+}
+wamp
+windows apach mycicle php

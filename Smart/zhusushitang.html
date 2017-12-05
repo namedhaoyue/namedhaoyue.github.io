@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<title>Document</title>
+  <link rel="stylesheet" href="dist/css/swiper.min.css">
+<style>
+
+body {
+        background: #eee;
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        color:#000;
+        margin: 0;
+        padding: 0;
+        max-width:640px；
+        min-width: 320px;
+    }
+       .to{
+         text-align: center;
+         margin:0;
+         padding:0;
+         font-size: 0;
+         position: relative;
+       }
+       .to .im{
+        
+        left:0;
+       	height: 190px;
+       	width: 370px;
+       }
+       .to .pn{
+       	position: absolute;
+       	left:10px;
+       	top:10px;
+       	width:5%;
+       }
+       .bor{
+       	padding:0;
+       	margin:0 auto;
+       	margin-top: 0;
+       	display: block;
+       	width: 1px;
+       	height: 70px;
+       	background-color: #C4C4C4;
+       }
+       .con{
+       	text-align: center;
+       }
+       .con h3{
+       	padding-bottom:0;
+       	margin-bottom:0;
+       }
+       .con p{
+       	padding:0;
+       	margin:0;
+       	color: #616161;
+       }
+       .con #len{
+        text-align: center;
+        margin-top: 10px;
+        font-size: 12px;
+       }
+       li{
+        list-style-type: none;
+        font-size: 10px;
+        color: #616161;
+       }
+       .lea{
+        padding-top:10px;
+        padding-bottom: 20px;
+        border-bottom: 1px solid #828282;
+       }
+       .lea ul{
+        display: flex;
+        padding-left: 0px;
+        margin-left: 20px;
+       }
+
+       .lea ul li{
+        width: 70px;
+        height: 20px;
+        background-color: #B8B8B8;
+        color: #ffffff;
+        font-size: 12px;
+        margin-left: 28px;
+        text-align: center;
+        line-height: 20px;
+
+       }
+       .lea li a{
+        text-decoration: none;
+        color: #fff;
+       }
+       .lea #first{
+        margin-left: 30px;
+        background-color: #828282;
+        color: #ffffff;
+}
+html, body {
+      position: relative;
+      height: 100%;
+    }
+.swiper-container {
+      margin-top:10px;
+      width: 300px;
+      height: 200px;
+    }
+    .swiper-slide img{
+      width:300px;
+      height: 200px;
+    }
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background:#fff;
+
+      /* Center slide text vertically */
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+    }
+    .dh{
+      margin-top:30px;
+    }
+    .dh span{
+      margin-left: 35px;
+
+    }
+    .dh ul li{
+      line-height: 15px;
+    }
+    .dh p{
+      margin-top: 30px;
+      text-align: center;
+      margin-left: 35px;
+      width: 300px;
+      height: 25px;
+      color: #fff;
+      background-color: #828282;
+    }
+      .la{
+      margin-top: 60px;
+      }
+      .la ul{
+        display: flex;
+        width: 25px;
+      }
+      .la ul img{
+        width: 80px;
+        height: 80px;
+      }  
+      .la .btt{
+        color: #0000AA;
+        width: 300px;
+        height: 30px;
+        line-height: 30px;
+        margin-left: 35px;
+        border-top: 1px solid #828282;
+        border-bottom: 1px solid #828282;
+      }
+       .la ul li {
+    margin-right: 25px;
+}
+      .la p{
+        font-size: 10px;
+        width:290px;
+        text-align: left;
+        margin-left: 39px;
+        line-height: 16px;
+      }
+</style>
+</head>
+<body>
+<header class="to">
+<img class="im" src="img/timg.jpg">
+<a href="index.html"><img class="pn" src="img/fan.png"></a>
+</header>
+<bor class="bor"></bor>
+<content class="con">
+   <h3>DINING</h3>
+   <p>住宿食堂</p>
+   <p id="len"><li>我们的食堂环境清新优雅，食材以农场自己的动、</li>
+<li>植物为原材料，提供多种饮食种类，最大化让您体验优质服务。</li>
+</p>
+ </content>
+
+<div class="lea">
+<ul>
+<li id="first">三食三餐</li>
+<li><a href="shaokao.html">小烧烤</a></li>
+<li><a href="zuofan.html">自助做饭</a></li>
+</ul>
+</div>
+
+
+<div class="dh">
+<span>餐厅内景</span>
+ <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><img src="img/342.jpg"></div>
+      <div class="swiper-slide"><img src="img/23114.jpg"></div>
+      <div class="swiper-slide"><img src="img/54433222332.jpg"></div>
+      <div class="swiper-slide"><img src="img/9775.jpg"></div>
+    </div>
+    <!-- Add Pagination -->
+    <div class="swiper-pagination"></div>
+  </div>
+<ul>
+<li>“非宁静无以致远，无淡泊无以名利“，</li>
+<li>或携家人或与三两好友，聚在这里安心吃饭低语浅斟，幸甚至</li>
+<li>哉，歌以咏志</li>
+</ul>
+
+<p>三食三餐</p>
+</div>
+
+<div class="la">
+<p class="btt">早餐</p>
+<ul>
+<li><img src="img/879.jpg"></li>
+<li><img src="img/nnn.jpg"></li>
+<li><img src="img/bbbb.jpg"></li>
+
+</ul>  
+<ul>
+<li><img src="img/453.jpg"></li>
+<li><img src="img/546547.jpg"></li>
+<li><img src="img/67554.jpg"></li>
+</ul>  
+<p>
+饮品以农场自主种植物和养殖奶牛牛奶为原材
+料，制成粥、牛奶、豆浆，甘甜可口，饮之不忘
+主食以农场自主种植小麦、玉米为原材
+料，有面包、窝头、卷饼，美味可口，食之不忘
+
+</p>
+
+</div>
+
+<div class="la">
+<p class="btt">午餐</p>
+<ul>
+<li><img src="img/43546436.jpg"></li>
+<li><img src="img/34546.jpg"></li>
+<li><img src="img/79876.jpg"></li>
+
+</ul>  
+<ul>
+<li><img src="img/mmm.jpg"></li>
+<li><img src="img/232435.jpg"></li>
+<li><img src="img/yyyy.jpg"></li>
+</ul>  
+<p>
+菜品以农场自主种植物和养殖动物为原材
+料，制成炒菜、炖菜、拌菜
+主食以农场自主种植大米、小麦、玉米为原材
+料，有米饭、面条、玉米饼，美味可口，食之不忘
+
+</p>
+
+</div>
+
+<div class="la">
+<p class="btt">晚餐</p>
+<ul>
+<li><img src="img/fb10227a9fd84737a47c9558e4e61a9e_th.jpg"></li>
+<li><img src="img/ghnbvn.jpg"></li>
+<li><img src="img/ert.jpg"></li>
+
+</ul>  
+<ul>
+<li><img src="img/mmm.jpg"></li>
+<li><img src="img/232435.jpg"></li>
+<li><img src="img/yyyy.jpg"></li>
+</ul>  
+<p>
+菜品以农场自主种植物和养殖动物为原材
+料，制成炒菜、炖菜、拌菜
+主食以农场自主种植小麦、玉米为原材
+料，有面包、窝头、卷饼，美味可口，食之不忘
+
+</p>
+
+</div>
+
+
+<script src="dist/js/swiper.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper('.swiper-container', {
+      pagination: {
+        el: '.swiper-pagination',
+      },
+    });
+  </script>
+
+</body>
+</html>

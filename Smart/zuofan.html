@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<title>Document</title>
+  <link rel="stylesheet" href="dist/css/swiper.min.css">
+<style>
+
+body {
+        background: #eee;
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        color:#000;
+        margin: 0;
+        padding: 0;
+        max-width:640px；
+        min-width: 320px;
+    }
+       .to{
+         text-align: center;
+         margin:0;
+         padding:0;
+         font-size: 0;
+         position: relative;
+       }
+       .to .im{
+        
+        left:0;
+       	height: 190px;
+       	width: 370px;
+       }
+       .to .pn{
+       	position: absolute;
+       	left:10px;
+       	top:10px;
+       	width:5%;
+       }
+       .bor{
+       	padding:0;
+       	margin:0 auto;
+       	margin-top: 0;
+       	display: block;
+       	width: 1px;
+       	height: 70px;
+       	background-color: #C4C4C4;
+       }
+       .con{
+       	text-align: center;
+       }
+       .con h3{
+       	padding-bottom:0;
+       	margin-bottom:0;
+       }
+       .con p{
+       	padding:0;
+       	margin:0;
+       	color: #616161;
+       }
+       .con #len{
+        text-align: center;
+        margin-top: 10px;
+        font-size: 12px;
+       }
+       li{
+        list-style-type: none;
+        font-size: 10px;
+        color: #616161;
+       }
+       .lea{
+        padding-top:10px;
+        padding-bottom: 20px;
+        border-bottom: 1px solid #828282;
+       }
+       .lea ul{
+        display: flex;
+        padding-left: 0px;
+        margin-left: 20px;
+       }
+
+       .lea ul li{
+        width: 70px;
+        height: 20px;
+        background-color: #B8B8B8;
+        color: #ffffff;
+        font-size: 12px;
+        margin-left: 28px;
+        text-align: center;
+        line-height: 20px;
+
+       }
+       .lea li a{
+        text-decoration: none;
+        color: #fff;
+       }
+       .lea #first{
+     
+        background-color: #828282;
+        color: #ffffff;
+}
+html, body {
+      position: relative;
+      height: 100%;
+    }
+.swiper-container {
+      margin-top:10px;
+      width: 300px;
+      height: 200px;
+    }
+    .swiper-slide img{
+      width:300px;
+      height: 200px;
+    }
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background:#fff;
+
+      /* Center slide text vertically */
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+    }
+    .dh{
+      margin-top:30px;
+    }
+    .dh span{
+      margin-left: 37px;
+      color: #FF4500;
+
+    }
+    .dh ul li{
+      line-height: 15px;
+    }
+    .dh p{
+      margin-top: 30px;
+      text-align: center;
+      margin-left: 35px;
+      width: 300px;
+      height: 25px;
+      color: #fff;
+      background-color: #828282;
+    }
+      .la{
+      margin-top: 60px;
+      }
+      .la .firs{
+        display: flex;
+        width: 25px;
+      }
+      .la ul img{
+        width: 80px;
+        height: 80px;
+      }  
+      .la .btt{
+        color: #0000AA;
+        width: 300px;
+        height: 30px;
+        line-height: 30px;
+        margin-left: 35px;
+        border-top: 1px solid #828282;
+        border-bottom: 1px solid #828282;
+      }
+       .la ul li {
+    margin-right: 25px;
+}
+      .la p{
+        font-size: 10px;
+        width:290px;
+        text-align: left;
+        margin-left: 39px;
+        line-height: 16px;
+      }
+      #las{
+        margin:0;
+        padding:0;
+        padding-left: 35px;
+        margin-top: 15px;
+      }
+      #las img{
+        height: 200px;
+        width: 300px;
+      }
+      #las li{
+        line-height: 50px;
+      }
+</style>
+</head>
+<body>
+<header class="to">
+<img class="im" src="img/timg.jpg">
+<a href="index.html"><img class="pn" src="img/fan.png"></a>
+</header>
+<bor class="bor"></bor>
+<content class="con">
+   <h3>DINING</h3>
+   <p>住宿食堂</p>
+   <p id="len"><li>我们的食堂环境清新优雅，食材以农场自己的动、</li>
+<li>植物为原材料，提供多种饮食种类，最大化让您体验优质服务。</li>
+</p>
+ </content>
+
+<div class="lea">
+<ul>
+<li><a href="zhusushitang.html">三食三餐</a></li>
+<li><a href="shaokao.html">小烧烤</a></li>
+<li id="first"><a href="">自助做饭</a></li>
+</ul>
+</div>
+
+
+<div class="dh">
+<span>农场果蔬概况</span>
+ <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><img src="img/b201508041645389574.jpg"></div>
+      <div class="swiper-slide"><img src="img/2014112111192025785.jpg"></div>
+      <div class="swiper-slide"><img src="img/dsf.jpg"></div>
+      <div class="swiper-slide"><img src="img/2015041422340241193737.jpg"></div>
+      <div class="swiper-slide"><img src="img/1302823508268_2011033109252188.jpg"></div>
+
+    </div>
+    <!-- Add Pagination -->
+    <div class="swiper-pagination"></div>
+  </div>
+<ul>
+<li>我们的果蔬种植基地是专门为了游客在厨房自助做饭准备的，</li>
+<li>规模不大但足以满足游客需求，内种有黄瓜、白菜、辣椒、西</li>
+<li>红柿、菠菜、甘蓝、苹果、橘子等果蔬，培育方式科学健康，</li>
+<li>可放心食用</li>
+</ul>
+
+<p>自助做饭</p>
+</div>
+
+<div class="la">
+<p class="btt">厨房</p>
+<ul class="firs">
+<li><img src="img/vbcc.jpg"></li>
+<li><img src="img/dsssssssgsd.jpg"></li>
+<li><img src="img/vbcjhj.jpg"></li>
+
+</ul>  
+<ul class="firs">
+<li><img src="img/nbv.jpg"></li>
+<li><img src="img/vbcc.jpg"></li>
+<li><img src="img/dsssssssgsd.jpg"></li>
+</ul>  
+<p>
+我们为您准备了多种家庭厨房，在厨房里可以自助用在农场采摘的原材料做饭，做饭工具我们都将为您提供·，产生的费用将与房费一起结算
+
+</p>
+
+</div>
+
+<div class="la">
+<p class="btt">家庭时光</p>
+<ul id="las">
+<li><img src="img/682080f3a2ab60dc484c569bd9b158a5.jpg"></li>
+<li><img src="img/7e3e6709c93d70cf1ce00943fadcd100baa12b61.jpg"></li>
+<li><img src="img/W020130717511081809109.jpg"></li>
+</ul>  
+<p>
+与家人一起享受亲子时光
+</p>
+
+</div>
+
+
+
+
+<script src="dist/js/swiper.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper('.swiper-container', {
+      pagination: {
+        el: '.swiper-pagination',
+      },
+    });
+  </script>
+
+</body>
+</html>

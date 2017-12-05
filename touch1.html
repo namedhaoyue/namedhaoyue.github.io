@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<script src="jquery-1.9.1.js"></script>
+	<script>
+			$(function(){
+			//var wz=$("#text").offset();
+			var wz=$("#text").position();
+			//alert(wz.top);	
+			//alert($("#text").height())
+			//alert($("#text").innerHeight())
+			$("#box").on("touchstart",function(e){
+			  $("#text").text("touchstart");
+			  touch=e.originalEvent.targetTouches[0];
+			  $("#text").text("touchstart"+touch.pageX+" "+touch.pageY);
+			})
+			i=1;
+			$("#box").on("touchmove",function(e){
+			
+				$("#text").text("touchmove"+i++)
+			})
+			
+			$("#box").on("touchend",function(e){
+				
+				$("#text").text("touchend")
+			})
+			
+			
+			
+			
+			$("#box>span").click(function(){			
+				window.scrollTo(0,$("#text").offset().top)			
+			})
+			})
+		
+		</script>
+	
+	<title>Document</title>
+	
+	<style>
+	
+	*{padding:0;margin:0}
+	#box{width:100%;height:3000px;background:lightgreen;
+	margin-bottom:60px;
+	}
+	#text{background:#036;color:#fff;height:60px;
+	line-height:30px;padding:10px;position:fixed;
+	bottom:0;width:100%;}
+	</style>
+</head>
+<body>
+	<div id="box">
+		<span>BUT</span>
+	</div>
+	<div id="text">THUS</div>
+	
+</body>
+</html>

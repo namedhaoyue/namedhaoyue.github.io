@@ -1,0 +1,146 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<title>知识点管理</title>
+<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+<link href="css/kb.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<div class="container">
+  <div class="row">
+    <h1 style="text-shadow:1px 2px 3px #333">离散数学 知识点管理</h1>
+    <p>
+      <button type="button" class="btn  pull-right btn-info">查看得分情况</button>
+      <button type="button" class="btn btn-primary pull-right" id="kp-new" style="margin-right:10px">增加新知识点</button>
+    </p>
+  </div>
+  <div class="row">
+    <div class="col-md-12" id="kp">
+      <h3 style="text-shadow:1px 2px 3px #333">知识点列表</h3>
+      <ul class="list-group" id="kpl">
+        
+      </ul>
+      <ul class="list-group" id="kpl2">
+        <li class="list-group-item"> <span class="rank">1</span> <span class="name">命题逻辑的推理理论</span> <span class="kpi">
+          <input type="text" class="kp-name" class="form-control" placeholder="输入新知识点" value="一阶逻辑的基本概念" required="required" maxlength="50">
+          <button type="button" class="btn btn-primary btn-sm kp-save">保存</button>
+          <button type="button" class="btn btn-default btn-sm kp-cancel">取消</button>
+          </span> <a class="yicon icon-trash del pull-right" title="删除"  data-toggle="modal" data-target="#myModal"></a> <a class="yicon icon-pencil update pull-right" title="编辑"></a> </li>      
+      </ul>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+<div class="modal-dialog">
+  <div class="modal-content">
+    <div class="modal-header">
+      <button type="button" class="close" data-dismiss="modal" aria-hidden="true"> &times; </button>
+      <h4 class="modal-title" id="myModalLabel"> 您确定要删除该知识点吗？ </h4>
+    </div>
+    <div class="modal-body"> 删除该知识点可能影响到该知识点相关的作业、视频、课件。 </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-primary" data-dismiss="modal" id="btn-del">删除 </button>
+      <button type="button" class="btn btn-default" id="btn-can"> 取消 </button>
+    </div>
+  </div>
+</div>
+<script src="js/jquery-1.9.1.js"></script> 
+<script src="js/bootstrap.min.js"></script> 
+<script src="js/jquery.ui.core.js"></script> 
+<script src="js/jquery.ui.widget.js"></script> 
+<script src="js/jquery.ui.mouse.js"></script> 
+<script src="js/jquery.ui.sortable.js"></script> 
+<script>
+  $( function() {
+	 var index=0;
+	// for(i=0;i<$("#kpl li").size();i++)$(this).index[i]=i;
+	// console.log(index);
+    $( "#kpl" ).sortable().disableSelection();	
+
+	
+	
+	$("#btn-del").click(function(){
+		console.log(index+"deleted");
+		$("#kpl li").eq(index).remove();
+		rank();
+		})
+	$("#btn-can").click(function(){
+		$("#myModal").modal('hide')
+	})	
+
+	
+	function rank()
+	{
+	  $("#kpl li").each(function(){
+		  $(this).find(".rank").text($("#kpl li").index(this)+1);
+		  })	
+    }	
+	
+	$("#kp-new").click(function(){
+		
+		$("#kpl2 .rank").text($("#kpl li").length+1)
+		$("#kpl2").fadeIn(100);
+		$(".kp-name").val("").focus();
+	})
+	
+	$("#kpl2 .kp-save").click(function(){
+		var rank=$("#kpl2 .rank").text();
+		var kname=$("#kpl2 .kp-name").val();
+		if(kname!="")addRow(rank,kname);
+		$("#kpl2").hide();
+	});
+	
+	function addRow(r,k)//r:rank; k:kname
+	{
+		var row="<li class='list-group-item'> <span class='rank'>"+r+"</span> <span class='name'>"+k+"</span> <span class='kpi'>\
+          <input type='text' class='kp-name' class='form-control' placeholder='输入新知识点' value='一阶逻辑的基本概念' required='required' maxlength='50'>\
+          <button type='button' class='btn btn-primary btn-sm kp-save'>保存</button>\
+          <button type='button' class='btn btn-default btn-sm kp-cancel'>取消</button>\
+          </span> <a class='yicon icon-trash del pull-right' title='删除'  data-toggle='modal' data-target='#myModal'></a> <a class='yicon icon-pencil update pull-right' title='编辑'></a> </li>";
+		
+		$("#kpl").append(row);
+		     $("#kpl>li>.update:last").on("click",function(){
+		$(this).siblings(".name").hide().next().show().find("input").eq(0).focus();
+		var name=$(this).siblings(".name").text();
+		$(this).siblings(".kpi").find(".kp-name").val(name);
+		});
+			$("#kpl .kp-save:last").on("click",function(){
+		var  kp_value=$(this).prev().val();
+		if(kp_value!="")
+		$(this).parent().prev().text(kp_value).show().next().hide();
+		})
+	$("#kpl.kp-cancel:last").on("click",function(){
+		  $(this).parent().hide().prev().show();
+		})
+
+	$("#kpl>li>.del").on("click",function(){
+		 index=$("#kpl .del").index(this);	
+		 console.log(index);	
+		})
+
+
+	}
+	$.ajax({type:'post',
+        url:'1.json',
+        data:{},
+        dataType:'json',
+        success:function(data){
+        	console.log(data);
+        	$.each(data,function(i,item){
+        		var r=item.rank;
+        		var k=item.kname;
+        		addRow(r,k);      		
+        	})
+        	rank();//额外操作，其他网页不需要
+        }
+ })
+	
+ } );
+ 
+ 
+  </script>
+</body>
+</html>

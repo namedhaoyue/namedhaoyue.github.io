@@ -1,0 +1,158 @@
+
+{
+    "jd": [{
+        "imgname": "images/1.jpg",
+        "title": "第一张图片的文字",
+        "href":"kn.html"
+    },
+    {
+        "imgname": "images/1.jpg",
+        "title": "第2张图片的文字",
+        "href":"kw.html"
+    },{
+        "imgname": "images/1.jpg",
+        "title": "第3张图片的文字",
+        "href":"small.html"
+    },
+    {
+        "imgname": "images/1.jpg",
+        "title": "第4张图片的文字",
+        "href":"mywork.html"
+    }],
+      "kn": [{
+        "imgname": "images/1.jpg",
+        "title": "第一张图片的文字",
+        "href":"kn.html"
+    },
+    {
+        "imgname": "images/1.jpg",
+        "title": "第2张图片的文字",
+        "href":"kw.html"
+    },{
+        "imgname": "images/1.jpg",
+        "title": "第3张图片的文字",
+        "href":"small.html"
+    },
+    {
+        "imgname": "images/1.jpg",
+        "title": "第4张图片的文字",
+        "href":"mywork.html"
+    }],
+
+      "kw":  [{
+        "imgname": "images/1.jpg",
+        "title": "第一张图片的文字",
+        "href":"kn.html"
+    },
+    {
+        "imgname": "images/1.jpg",
+        "title": "第2张图片的文字",
+        "href":"kw.html"
+    },{
+        "imgname": "images/1.jpg",
+        "title": "第3张图片的文字",
+        "href":"small.html"
+    },
+    {
+        "imgname": "images/1.jpg",
+        "title": "第4张图片的文字",
+        "href":"mywork.html"
+    }],
+      "mywork": [{
+        "imgname": "images/1.jpg",
+        "title": "第一张图片的文字",
+        "href":"kn.html"
+    },
+    {
+        "imgname": "images/1.jpg",
+        "title": "第2张图片的文字",
+        "href":"kw.html"
+    },{
+        "imgname": "images/1.jpg",
+        "title": "第3张图片的文字",
+        "href":"small.html"
+    },
+    {
+        "imgname": "images/1.jpg",
+        "title": "第4张图片的文字",
+        "href":"mywork.html"
+    }],
+      "small": [{
+        "h4":"标题1",
+        "nr":"内容1，很多文字",
+        "href":"kn.html"
+    },
+    {
+        "h4": "标题2",
+        "nr": "内容2，很多文字",
+        "href":"kw.html"
+    },{
+        "h4": "标题3",
+        "nr": "内容1，很多文字",
+        "href":"small.html"
+    },
+    {
+        "h4": "标题4",
+        "nr": "内容2，很多文字",
+        "href":"big.html"
+    },
+    {
+        "h4": "标题5",
+        "nr": "内容5，很多文字",
+        "href":"mywork.html"
+    },
+    {
+        "h4": "标题6",
+        "nr": "内容2，很多文字",
+        "href":"big.html"
+    }],
+    "big":  [{
+        "h4": "标题1",
+        "nr": "内容1，很多文字",
+        "href":"kn.html"
+    },
+    {
+        "h4": "标题2",
+        "nr": "内容2，很多文字",
+        "href":"kw.html"
+    }, {
+        "h4": "标题3",
+        "nr": "内容1，很多文字",
+        "href":"small.html"
+    },
+    {
+        "h4": "标题4",
+        "nr": "内容2，很多文字",
+        "href":"big.html"
+    },
+    {
+        "h4": "标题5",
+        "nr": "内容5，很多文字",
+        "href":"mywork.html"
+    },
+    {
+        "h4": "标题6",
+        "nr": "内容2，很多文字",
+        "href":"big.html"
+    }],
+    "nav": [{
+        "name": "导航1",
+        "href": "kn.html"
+    },
+    {
+        "name": "导航2",
+        "href": "kw.html"
+    },{
+        "name": "导航3",
+        "href": "small.html"
+    },
+    {
+        "name": "导航4",
+        "href": "big.html"
+    },
+    {
+        "name": "导航4",
+        "href": "mywork.html"
+    }]
+
+}

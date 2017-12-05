@@ -1,0 +1,44 @@
+@charset "utf-8";
+@font-face {
+            font-family: 'icon';
+            src: url('..fonts/icon.eot?carbqp');
+            src: url('fonts/icon.eot?carbqp#iefix') format('embedded-opentype'), 
+                 url('fonts/icon.ttf?carbqp') format('truetype'), 
+                 url('fonts/icon.woff?carbqp') format('woff'), 
+                 url('fonts/icon.svg?carbqp#icon') format('svg');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+.yicon {
+            font-family: 'icon';
+            speak: none;
+            font-style: normal;
+            font-weight: normal;
+            font-variant: normal;
+            text-transform: none;
+            line-height: 1;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+			display: inline-block;
+        }
+.icon-pencil::before {
+    content: "";
+}
+.icon-trash::before {
+    content: "";
+}
+.update,.del{color:#999;font-size:20px;}
+.update:hover,.del:hover{color: #61a500;text-decoration:none;}
+.del{margin-left:10px;}
+#kp li{margin-top:10px;clear:both;}
+#kp .rank{width:18px;height:18px;font-size:12px;line-height:18px;
+text-align:center;background:#999;color:#fff;border-radius:18px;display:inline-block;margin-right:10px;}
+#kp li:hover{color:#666;}
+#kp li input{width:60%;display:inline-block;margin-right:10px;}
+.kpi{display:none;}
+.modal{top:30%;}
+.modal h4{font-weight:bold;}
+#kpl2 .kpi{display:inline;}
+#kpl2 .name{display:none;}
+#kpl2{display:none;}
